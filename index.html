@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Pahmi Hasan ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="floating-hearts" id="hearts"></div>
+
+<main>
+
+  <!-- HALAMAN PEMBUKA -->
+  <section class="page active" id="intro">
+    <div class="intro-content">
+      <span class="eyebrow">A SPECIAL DAY FOR YOU</span>
+
+      <div class="big-heart">♡</div>
+
+      <h1>Happy Birthday,<br>
+        <em>Pahmi Hasan.</em>
+      </h1>
+
+      <p>
+        Hari ini adalah hari spesialmu.
+        Sebuah halaman kecil untuk merayakan perjalanan hidup,
+        kenangan, dan semua impian yang ingin kamu wujudkan.
+      </p>
+
+      <button class="primary-btn" onclick="showPage('gallery')">
+        Open My Story →
+      </button>
+
+      <div class="tiny-note">CHEERS TO MY NEXT CHAPTER · ♡</div>
+    </div>
+  </section>
+
+
+  <!-- GALERI FOTO -->
+  <section class="page" id="gallery">
+    <div class="section-wrap">
+
+      <span class="eyebrow">MY JOURNEY SO FAR</span>
+
+      <h2>A little collection<br>
+        <em>of my memories.</em>
+      </h2>
+
+      <p class="subtext">
+        Setiap foto menyimpan cerita tentang perjalanan,
+        proses, tawa, dan kenangan yang membentuk dirimu.
+      </p>
+
+      <div class="gallery">
+        <button class="photo" onclick="openPhoto(1)">
+          <img src="assets/foto1.jpeg" alt="Foto Pahmi 1">
+        </button>
+
+        <button class="photo" onclick="openPhoto(2)">
+          <img src="assets/foto2.jpeg" alt="Foto Pahmi 2">
+        </button>
+
+        <button class="photo" onclick="openPhoto(3)">
+          <img src="assets/foto3.jpeg" alt="Foto Pahmi 3">
+        </button>
+
+        <button class="photo" onclick="openPhoto(4)">
+          <img src="assets/foto4.jpeg" alt="Foto Pahmi 4">
+        </button>
+
+        <button class="photo" onclick="openPhoto(5)">
+          <img src="assets/foto5.jpeg" alt="Foto Pahmi 5">
+        </button>
+
+        <button class="photo" onclick="openPhoto(6)">
+          <img src="assets/foto6.jpeg" alt="Foto Pahmi 6">
+        </button>
+
+        <button class="photo" onclick="openPhoto(7)">
+          <img src="assets/foto7.jpeg" alt="Foto Pahmi 7">
+        </button>
+      </div>
+
+      <button class="primary-btn" onclick="showPage('bottle')">
+        Continue My Story →
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- FOTO FULLSCREEN -->
+  <div class="lightbox" id="lightbox" onclick="closePhoto()">
+    <button class="lightbox-close">×</button>
+    <img id="lightbox-img" src="" alt="Foto Pahmi">
+  </div>
+
+
+  <!-- BOTOL SURAT -->
+  <section class="page" id="bottle">
+    <div class="section-wrap">
+
+      <span class="eyebrow">A MESSAGE TO YOU</span>
+
+      <h2>A little reminder,<br>
+        <em>from me to you.</em>
+      </h2>
+
+      <p class="subtext">
+        Ada beberapa kata yang ingin aku ingat
+        untuk kamu.
+      </p>
+
+      <button class="bottle" onclick="openLetter()">
+        <span class="cork"></span>
+        <span class="bottle-neck"></span>
+        <span class="bottle-body">
+          <span class="paper-heart">♡</span>
+        </span>
+      </button>
+
+      <div class="tiny-note">TAP THE BOTTLE ♡</div>
+
+    </div>
+  </section>
+
+
+  <!-- SURAT UNTUK kamu -->
+  <section class="page" id="letter">
+    <article class="letter">
+
+      <span class="eyebrow">A LETTER TO you</span>
+
+      <h2>Dear Pahmi,</h2>
+
+      <p>
+        Hai, pahmi. Selamat ulang tahun .
+        Hari ini aku ingin berhenti sebentar, melihat sejauh
+        apa kamu sudah berjalan, dan menghargai semua proses
+        yang sudah kamu lewati.
+      </p>
+
+      <p>
+        Terima kasih karena sudah bertahan melewati hari-hari
+        yang mudah maupun sulit. Terima kasih sudah tetap
+        berusaha, bahkan ketika keadaan nggak selalu sesuai
+        harapan.
+      </p>
+
+      <p>
+        Di umur yang baru ini, aku harap kamu lebih berani
+        mengambil kesempatan, lebih konsisten mengejar
+        impian, dan lebih menghargai dirimu sendiri.
+        kamu nggak harus sempurna, kamu hanya perlu terus
+        bertumbuh menjadi lebih baik.
+      </p>
+
+      <p>
+        Kalau suatu hari nanti kamu merasa lelah atau gagal,
+        semoga kamu membaca kembali pesan ini dan ingat bahwa
+        satu langkah kecil tetap berarti.
+      </p>
+
+      <p>
+        Jangan menyerah pada diri sendiri.
+        Masih banyak hal baik yang bisa kamu usahakan
+        dan banyak cerita yang belum selesai.
+      </p>
+
+      <p class="signature">
+        Dengan bangga dan penuh harapan,<br>
+        pahmi hasan ♡
+      </p>
+
+      <button class="primary-btn" onclick="showPage('wishes')">
+        One More Page →
+      </button>
+
+    </article>
+  </section>
+
+
+  <!-- DOA DAN HARAPAN -->
+  <section class="page" id="wishes">
+    <div class="section-wrap">
+
+      <span class="eyebrow">MY WISHES FOR THIS NEW CHAPTER</span>
+
+      <h2>A new age,<br>
+        <em>a better me.</em>
+      </h2>
+
+      <div class="wish-grid">
+
+        <article class="wish-card">
+          <span>☾</span>
+          <h3>Health & Peace</h3>
+          <p>
+            Semoga kamu selalu diberikan kesehatan,
+            ketenangan hati, dan kekuatan untuk
+            melewati setiap tantangan.
+          </p>
+        </article>
+
+        <article class="wish-card">
+          <span>✿</span>
+          <h3>Happiness</h3>
+          <p>
+            Semoga kamu lebih sering bersyukur,
+            menikmati hal sederhana, dan dikelilingi
+            orang-orang yang tulus.
+          </p>
+        </article>
+
+        <article class="wish-card">
+          <span>☆</span>
+          <h3>My Dreams</h3>
+          <p>
+            Semoga semua target dan impian kamu
+            satu per satu tercapai. Semoga kamu
+            tetap berani bermimpi dan berusaha.
+          </p>
+        </article>
+
+      </div>
+
+      <button class="primary-btn" onclick="showPage('ending')">
+        The Last Page →
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- PENUTUP -->
+  <section class="page" id="ending">
+    <div class="intro-content">
+
+      <span class="eyebrow">A BIRTHDAY NOTE TO to you</span>
+
+      <div class="big-heart pulse">♥</div>
+
+      <h1>Happy Birthday,<br>
+        <em>Pahmi Hasan.</em>
+      </h1>
+
+      <p>
+        Selamat ulang tahun, Pahmi Hasan!
+        Semoga di usia yang baru ini kamu tumbuh menjadi
+        pribadi yang lebih dewasa, kuat, bijak, dan berani.
+
+        Semoga langkahmu dimudahkan, rezekimu dilancarkan,
+        keluargamu selalu diberikan kesehatan, dan cita-citamu
+        semakin dekat.
+
+        Terima kasih untuk dirimu sendiri karena sudah
+        bertahan sampai hari ini.
+      </p>
+
+      <button class="primary-btn" onclick="showFinal()">
+        A Final Little Message ♡
+      </button>
+
+      <div class="tiny-note">CHEERS TO MY NEXT CHAPTER · ♡</div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- PESAN TERAKHIR -->
+<div class="final-modal" id="final-modal">
+  <div class="modal-card">
+
+    <div class="modal-heart">♡</div>
+
+    <h2>One Last Thing...</h2>
+
+    <p>
+      Satu hal yang harus kamu ingat:
+      kamu pantas bangga pada prosesmu sendiri.
+
+      Terus belajar, terus berusaha, dan jangan berhenti
+      menjadi versi terbaik dari dirimu.
+
+      Happy Birthday to you!
+
+      — Pahmi Hasan ♡
+    </p>
+
+    <button class="primary-btn" onclick="closeFinal()">
+      Thank You ♡
+    </button>
+
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
